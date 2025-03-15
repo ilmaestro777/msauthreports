@@ -25,7 +25,7 @@ runs:
  - name: Run Entra Auth Report
       shell: pwsh
       run: |
- pwsh .\action\Invoke-EntraAuthReport.ps1 -TenantId '${{ inputs.tenant_id}}' -ClientId '${{ inputs.client_id }}' `
+ pwsh \action\Invoke-EntraAuthReport.ps1 -TenantId '${{ inputs.tenant_id}}' -ClientId '${{ inputs.client_id }}' `
 
  - name: Authentication Report
       uses: actions/upload-artifact@v4
