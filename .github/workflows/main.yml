@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
- - name: Checkout Action
+    - name: Checkout Action
       uses: actions/checkout@v4
       
- - name: run authrep action
+    - name: run authrep action
       uses: ./action
       with:
         client_id: ${{ secrets.AZURE_CLIENT_ID }}
