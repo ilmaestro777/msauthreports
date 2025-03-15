@@ -1418,7 +1418,7 @@ function exportTableToCSV() {
 "@
 
     # Generate the path
-    $OutputPath = ".\Entra_Authentication_Methods_Report.html"
+    $OutputPath = "./Entra_Authentication_Methods_Report.html"
 
     # Output HTML report
     $html | Out-File -FilePath $OutputPath -Encoding UTF8
